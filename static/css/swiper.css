@@ -1,0 +1,48 @@
+.swiper .slider {
+  position: relative;
+  width: 100%;
+  min-height: 4rem;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+}
+.swiper .item-list {
+  position: relative;
+}
+.swiper .item {
+  float: left;
+  overflow: hidden;
+  line-height: .48rem;
+  font-size: .28rem;
+  color: #999999;
+  text-align: center;
+}
+.swiper .dot-list {
+  margin-top: .6rem;
+  width: 100%;
+  text-align: center;
+}
+.swiper .dot-list ul{
+  display: inline-block;
+  vertical-align: middle;
+}
+.swiper .dot-list .dot {
+  float: left;
+  margin: 0 .2rem;
+}
+.swiper .dot-list .dot .name{
+  display: none;
+}
+.swiper .dot-list .dot .avatar{
+  margin: 0 auto;
+  width: .48rem;
+  height: .48rem;
+  border-radius: 50%;
+}
+.swiper .dot-list .dot.active .name{
+  display: block;
+}
+.swiper .dot-list .dot.active .avatar{
+  width: .96rem;
+  height: .96rem;
+}
