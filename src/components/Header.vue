@@ -160,9 +160,9 @@ export default {
   .toggle-mask.active{ -webkit-transform: translateY(0); transform: translateY(0);}
   .toggle-mask>div{ position: relative; top: 0; background: #15171A; font-size: .14rem; color: #999999; z-index: 999;}
   .toggle-mask>div .top-bar{ padding: .18rem .4rem; background: #202124;}
-  .toggle-mask>div .top-bar .close{ margin-top: .09rem; font-size: .5rem; color: #ffffff;}
+  .toggle-mask>div .top-bar .close{ margin-top: .09rem; line-height: 1; font-size: .5rem; color: #ffffff;}
 
-  .toggle-mask .mask-not-logged .top-bar .logo{ width: 1.38rem; height: .72rem;}
+  .toggle-mask .mask-not-logged .top-bar .logo{ width: 1.04rem;}
   .toggle-mask .mask-not-logged .main{ padding-right: 50%;}
   .toggle-mask .mask-not-logged .main ul li{ padding: .30rem .44rem; border-bottom: 1px solid #2B2B2E;}
   .toggle-mask .mask-not-logged .main ul li:last-child{ border: 0;}

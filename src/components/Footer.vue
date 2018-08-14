@@ -73,7 +73,7 @@ export default {
   .footer{ padding: 0 .4rem; background: #27374D;}
   .footer .webmap{ padding: .18rem 0 .52rem;}
   .footer .webmap>ul>li{ color: #ffffff; font-size: .36rem;}
-  .footer .webmap>ul>li h4{ padding: .32rem 0 .46rem; border-bottom: 1px solid #ffffff;}
+  .footer .webmap>ul>li h4{ padding: .32rem 0 .46rem; border-bottom: .01rem solid #ffffff;}
   .footer .webmap>ul>li h4 i{ font-size: .4rem;}
   .footer .webmap>ul>li.active{ color: #4FB1F7; border-color: #4FB1F7; transition: all .3s;}
   .footer .webmap>ul>li.active h4{ border-color: #4FB1F7;}
