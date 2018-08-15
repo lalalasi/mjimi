@@ -431,17 +431,19 @@
   dl dd input{ width: 100%;}
   dl dd .tips{ margin-top: .32rem; font-size: .24rem; color: #999999;}
   dl dd .tips em{ color: #4FB1F7;}
+  input:disabled{ color: #666; -webkit-text-fill-color:#666; opacity: 1;}
 
   .goods{ padding: .4rem .32rem;}
   .goods>div{ float: left; height: 1.92rem;}
-  .goods .img{ width: 1.92rem; background: black;}
+  .goods .img{ width: 1.92rem; overflow: hidden;}
+  .goods .img img{ width: auto; height: 100%;}
   .goods .info{ padding-left: .32rem; width: 4.86rem;}
   .goods .info .name{ font-size: .32rem; color: #333333;}
   .goods .info .price{ margin-top: .14rem; font-size: .28rem; color: #4FB1F7;}
   .goods .info .num{ margin-top: .26rem; line-height: .62rem; font-size: .28rem; color: #666666;}
   .goods .info .num .amount-wrap{ font-size: 0;}
   .goods .info .num .amount-wrap span{ display: inline-block; width: .62rem; height: .62rem; line-height: .6rem; font-size: .48rem; text-align: center; vertical-align: top; background: #F5F5F5; border: 1px solid #E6E6E6;}
-  .goods .info .num .amount-wrap input{ padding: .09rem; width: .9rem; line-height: .42rem; text-align: center; border-radius: 0; border-left: 0; border-right: 0;}
+  .goods .info .num .amount-wrap input{ padding: 0; width: .9rem; height: .62rem; line-height: .6rem; text-align: center; border-radius: 0; border-left: 0; border-right: 0;}
   .goods .info .num .amount-wrap input:focus{ border-top: 1px solid #E6E6E6; border-bottom: 1px solid #E6E6E6;}
   .buyer{ padding: .4rem .32rem;}
   .payinfo{ padding: .4rem .32rem;}

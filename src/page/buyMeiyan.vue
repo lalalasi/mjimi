@@ -129,7 +129,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .h1{ line-height: 1.08rem; text-align: center;}
-  .h2{ line-height: .56rem; color: #27384D; font-size: .36rem; font-weight: lighter; text-align: center;}
+  .h2{ line-height: .56rem; color: #27384D; font-size: .36rem; text-align: center;}
 
   .buybox{ padding: .74rem 0 .8rem; text-align: center;}
   .buybox .btn{ margin-top: .24rem; width: 5.8rem;}

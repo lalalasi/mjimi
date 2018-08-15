@@ -61,11 +61,11 @@
         </div>
         <div class="main">
           <ul>
-            <li><router-link tag="a" to="/">首页</router-link></li>
-            <li><router-link tag="a" to="flow">检测流程</router-link></li>
-            <li><router-link tag="a" to="reportNav">报告示例</router-link></li>
-            <li><router-link tag="a" to="shequ">社区</router-link></li>
-            <li><router-link tag="a" to="buyNav">购买</router-link></li>
+            <router-link tag="li" to="/">首页</router-link>
+            <router-link tag="li" to="flow">检测流程</router-link>
+            <router-link tag="li" to="reportNav">报告示例</router-link>
+            <router-link tag="li" to="shequ">社区</router-link>
+            <router-link tag="li" to="buyNav">购买</router-link>
           </ul>
         </div>
         <div class="foot">
@@ -190,11 +190,10 @@ export default {
   .toggle-menu .menu .top-bar{ padding: .27rem .4rem; line-height: 1; color: #ffffff; text-align: right;}
   .toggle-menu .menu .top-bar .close{ font-size: .5rem; vertical-align: middle;}
   .toggle-menu .menu .main ul{ padding-bottom: .2rem;}
-  .toggle-menu .menu .main ul li{ margin-bottom: .2rem; padding: .14rem .4rem;}
+  .toggle-menu .menu .main ul li{ margin-bottom: .2rem; padding: .14rem .4rem; font-size: .32rem; color: #ffffff;}
   .toggle-menu .menu .main ul li:active{ background: rgba(0,0,0,0.20);}
-  .toggle-menu .menu .main ul li a{ font-size: .32rem; color: #ffffff;}
   .toggle-menu .foot{ padding-left: .4rem;}
-  .toggle-menu .foot>div{ padding: .22rem 0; color: #ffffff; font-size: .32rem; vertical-align: middle; border-top: 1px solid #ffffff;}
+  .toggle-menu .foot>div{ padding: .22rem 0; color: #ffffff; font-size: .32rem; vertical-align: middle; border-top: 0.01rem solid #ffffff;}
   .toggle-menu .foot>div a{ color: #ffffff; vertical-align: middle;}
   .toggle-menu .foot .already-logged img{ margin-right: .14rem; width: .48rem; height: .48rem; border-radius: 50%;}
   .toggle-menu .foot .already-logged .username{ display: inline-block; margin-right: .14rem; max-width: 2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}

@@ -7,7 +7,7 @@
         <div class="container">
           <img src="../assets/images/empty_order.png"/>
           <p>暂无订单</p>
-          <div><a href="javascript:;" class="btn btn-block">前往购买</a></div>
+          <div><router-link class="btn btn-block" tag="a" to="/">前往购买</router-link></div>
         </div>
       </div>
 

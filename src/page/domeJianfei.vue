@@ -62,7 +62,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .banner{ padding-top: .74rem; padding-left: .2rem; height: 5.6rem; background: transparent url("../assets/images/dome_jf.png") no-repeat scroll center;}
+  .banner{ padding-top: .74rem; padding-left: .2rem; height: 5.6rem; background: url("../assets/images/dome_jf.png") no-repeat scroll center; background-size: 100% 100%;}
   .banner .h1{ line-height: 1.08rem; text-align: left;}
   .banner p{ margin-top: .22rem; line-height: .4rem; color: #718398; font-size: .22rem;}
   .banner p:last-child{ margin-top: .4rem;}

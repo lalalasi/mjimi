@@ -85,7 +85,8 @@
           <dl  class="clearfix">
             <dt>出生年月：</dt>
             <dd>
-              <DatePicker type="date" placeholder="请选择出生年月" v-model="form.birthday" @on-change="onDataChange" style="width: 100%; font-size: 14px;"></DatePicker>
+              <!--<DatePicker type="date" placeholder="请选择出生年月" v-model="form.birthday" @on-change="onDataChange" style="width: 100%; font-size: 14px;"></DatePicker>-->
+              <input type="date" placeholder="请选择出生年月" v-model="form.birthday" style="height:.72rem;"/>
             </dd>
           </dl>
         </div>

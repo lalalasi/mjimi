@@ -282,8 +282,8 @@ export default {
 
 
   .banner{ padding: .86rem .68rem; text-align: center; background: #718398;}
-  .banner h2{ margin: 0 auto; width: 4.54rem; height: 1.92rem; line-height: .96rem; color: #ffffff; font-size: .56rem; font-weight: lighter;}
-  .banner p{ margin-top: .34rem; color: #FFFFFF; font-size: .28rem; font-weight: 100;}
+  .banner h2{ margin: 0 auto; width: 4.54rem; height: 1.92rem; line-height: .96rem; color: #ffffff; font-size: .56rem;}
+  .banner p{ margin-top: .34rem; color: #FFFFFF; font-size: .28rem;}
   .banner{ background: #718398;}
   .banner{ background: #718398;}
 
@@ -291,7 +291,7 @@ export default {
   .process dl dt{ float: left; width: 1.52rem; text-align: right;}
   .process dl dt i{ display: inline-block; padding: .1rem .2rem; font-size: .4rem; color: #718398; border: 2px solid #B8C1CB; border-radius: 50%;}
   .process dl dd{ float: left; padding-left: .42rem; width: 3.82rem;}
-  .process dl dd h4{ margin-bottom: .12rem; font-size: .28rem; color: #27384D; font-weight: 600;}
+  .process dl dd h4{ margin-bottom: .12rem; font-size: .28rem; color: #27384D;}
   .process dl dd p{ font-size: .24rem; color: #999999;}
 
   .questions ul li{ padding-bottom: .1rem;}

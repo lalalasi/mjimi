@@ -71,44 +71,71 @@
             <dl class="clearfix">
               <dt>性别：</dt>
               <dd>
-                <Select v-model="form.sex" style="width:1.72rem;">
-                  <Option :value="0">男</Option>
-                  <Option :value="1">女</Option>
-                  <Option :value="2">保密</Option>
-                </Select>
+                <select v-model="form.sex" style="width:1.72rem;">
+                  <option value="0">男</option>
+                  <option value="1">女</option>
+                  <option value="2">保密</option>
+                </select>
+
+                <!--<Select v-model="form.sex" style="width:1.72rem;">-->
+                  <!--<Option :value="0">男</Option>-->
+                  <!--<Option :value="1">女</Option>-->
+                  <!--<Option :value="2">保密</Option>-->
+                <!--</Select>-->
               </dd>
             </dl>
 
             <dl class="clearfix">
               <dt>籍贯：</dt>
               <dd>
-                <Select v-model="form.provinceId" @on-change="onProvinceChange" style="width:1.72rem;">
-                  <Option v-for="item in provinceList" :value="item.id" :key="item.id">{{item.name}}</Option>
-                </Select>
+                <select v-model="form.provinceId" @change="onProvinceChange(form.provinceId)" style="width:1.72rem;">
+                  <option value="">请选择</option>
+                  <option v-for="item in provinceList" :value="item.id" :key="item.id">{{item.name}}</option>
+                </select>
 
-                <Select v-model="form.cityId" @on-change="onCityChange" style="width:1.72rem;">
-                  <Option v-for="item in cityList" :value="item.id" :key="item.id">{{item.name}}</Option>
-                </Select>
+                <select v-model="form.cityId" @change="onCityChange(form.cityId)" style="width:1.72rem;">
+                  <option value="">请选择</option>
+                  <option v-for="item in cityList" :value="item.id" :key="item.id">{{item.name}}</option>
+                </select>
 
-                <Select v-model="form.countyId" style="width:1.72rem;">
-                  <Option v-for="item in countyList" :value="item.id" :key="item.id">{{item.name}}</Option>
-                </Select>
+                <select v-model="form.countyId" style="width:1.72rem;">
+                  <option value="">请选择</option>
+                  <option v-for="item in countyList" :value="item.id" :key="item.id">{{item.name}}</option>
+                </select>
+
+                <!--<Select v-model="form.provinceId" @on-change="onProvinceChange" style="width:1.72rem;">-->
+                  <!--<Option v-for="item in provinceList" :value="item.id" :key="item.id">{{item.name}}</Option>-->
+                <!--</Select>-->
+
+                <!--<Select v-model="form.cityId" @on-change="onCityChange" style="width:1.72rem;">-->
+                  <!--<Option v-for="item in cityList" :value="item.id" :key="item.id">{{item.name}}</Option>-->
+                <!--</Select>-->
+
+                <!--<Select v-model="form.countyId" style="width:1.72rem;">-->
+                  <!--<Option v-for="item in countyList" :value="item.id" :key="item.id">{{item.name}}</Option>-->
+                <!--</Select>-->
               </dd>
             </dl>
 
             <dl class="clearfix">
               <dt>民族：</dt>
               <dd>
-                <Select v-model="form.nationId" style="width:1.72rem;">
-                  <Option v-for="item in nationList" :value="item.id" :key="item.id">{{item.name}}</Option>
-                </Select>
+                <select v-model="form.nationId" style="width:1.72rem;">
+                  <option value="">请选择</option>
+                  <option v-for="item in nationList" :value="item.id" :key="item.id">{{item.name}}</option>
+                </select>
+
+                <!--<Select v-model="form.nationId" style="width:1.72rem;">-->
+                  <!--<Option v-for="item in nationList" :value="item.id" :key="item.id">{{item.name}}</Option>-->
+                <!--</Select>-->
               </dd>
             </dl>
 
             <dl  class="clearfix">
               <dt>出生年月：</dt>
               <dd>
-                <DatePicker type="date" placeholder="请选择出生年月" v-model="form.birthday" @on-change="onDataChange" style="width: 100%; font-size: 14px;"></DatePicker>
+                <!--<DatePicker type="date" placeholder="请选择出生年月" v-model="form.birthday" @on-change="onDataChange" style="width: 100%; font-size: 14px;"></DatePicker>-->
+                <input type="date" placeholder="请选择出生年月" v-model="form.birthday" class="date" style="height:.72rem;"/>
               </dd>
             </dl>
 
@@ -199,6 +226,7 @@
 
       this.getProvince();
       this.getNation();
+      this.form.birthday = new Date().getFullYear()+"-"+ ("0" + (new Date().getMonth() + 1)).slice(-2)+"-"+("0" + new Date().getDate()).slice(-2);
     },
     methods:{
       next4(){
